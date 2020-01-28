@@ -1,0 +1,15 @@
+<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1"><link rel=icon href=favicon.ico><title>Daily Record</title><link href=css/app.78f05316.css rel=preload as=style><link href=js/app.720ea5dd.js rel=preload as=script><link href=js/chunk-vendors.50d10233.js rel=preload as=script><link href=css/app.78f05316.css rel=stylesheet></head><body><noscript><strong>We're sorry but Daily Record doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><script>// rem 计算
+      ~ function() {
+        function computed() {
+          const html = document.documentElement
+          const deviceWidth = html.clientWidth
+          const designWidth = 750 // 设计宽度
+          let fontSize = deviceWidth / designWidth * 100
+          if (deviceWidth >= 410) { // 日历插件最大宽度为410px
+            fontSize = 410 / designWidth * 100
+          }
+          html.style.fontSize = fontSize + 'px'
+        }
+        computed()
+        window.addEventListener('resize', computed)
+      }()</script><div id=app></div><script src=js/chunk-vendors.50d10233.js></script><script src=js/app.720ea5dd.js></script></body></html>
