@@ -7,7 +7,9 @@
 
     <!-- 日志列表 -->
     <div class="records">
-      <div v-if="records.length === 0" class="tip">暂无数据</div>
+      <div v-if="records.length === 0" class="tip">
+        <img src="../assets/empty.svg" alt="暂无数据" class="no-data-img">
+      </div>
       <ul v-else class="records__inner">
         <li v-for="item in records" :key="item.id" class="record">
           <router-link
@@ -80,18 +82,55 @@ export default {
   .records {
     flex: 1;
     overflow: auto;
-    padding: 0.3rem;
+    padding: 0.4rem;
+    .tip {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      .no-data-img {
+        width: 75px;
+      }
+    }
     .records__inner {
-      padding-left: 0.4rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
       .record {
+        &:last-child {
+          .record__inner {
+            .record__main {
+              border-bottom: none;
+            }
+          }
+        }
         .record__inner {
           display: flex;
-          align-items: baseline;
+          align-items: stretch;
           .record__time {
+            position: relative;
+            display: flex;
+            align-items: center;
+            font-size: 0.9em;
             margin-right: 0.2rem;
+            padding-left: 0.15rem;
+            border-left: 1px solid #ddd;
+            &::before {
+              content: '';
+              position: absolute;
+              left: 0;
+              top: 50%;
+              margin-left: -5px;
+              margin-top: -4.5px;
+              border: 4.5px solid #ddd;
+              border-radius: 50%;
+            }
           }
           .record__main {
+            flex: 1;
+            padding: 0.1rem 0;
             overflow: hidden;
+            border-bottom: 0.5px solid #eee;
             .record__title {
               margin: 0;
               padding: 0;
@@ -100,7 +139,7 @@ export default {
               text-overflow: ellipsis;
             }
             .record__content {
-              margin-top: 0.2rem;
+              margin: 0.1rem 0 0;
               white-space: nowrap;
               overflow: hidden;
               text-overflow: ellipsis;
