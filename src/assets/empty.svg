@@ -1,0 +1,15 @@
+<svg width="92" height="127" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="129" width="94" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <ellipse id="svg_2" cy="62.456668" cx="0.75" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <path stroke="#bbbbbb" transform="rotate(179.86981201171875 46.00005340576172,63.482994079589844) " id="svg_5" d="m16.156631,125.982922l-2.984421,-16.666981l-11.937724,-4.166753l14.922146,20.833734l74.608992,0l0,-124.999858l-89.53114,0l0,104.166128" stroke-width="3" fill="#fff"/>
+  <text transform="matrix(0.5794270709156989,0,0,0.7385718077421187,16.234701002016664,10.680707418825477) " stroke="#dddddd" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="28" id="svg_6" y="81.123208" x="-4.625193" stroke-width="0" fill="#bbbbbb">暂无数据</text>
+ </g>
+</svg>
